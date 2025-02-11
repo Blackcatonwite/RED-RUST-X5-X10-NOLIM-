@@ -1,7 +1,6 @@
 var currentUrl = window.location.href;
 
- if (currentUrl.startsWith("https://bummerrust.ru/") || 
-    currentUrl.startsWith("https://bummer-store.gamestores.app/")) {
+ if (true) { // Временно всегда истинно для отладки
   
     // Setting's shop
     const event = new CustomEvent("setCustomConfig")
@@ -141,7 +140,7 @@ var currentUrl = window.location.href;
         function addPersonalInfoBlock() {
             const htmlCode = `
                 <div class="container personalInfoContainer">
-                   <p class="infoLine">ИП Исаев Магомед Салах Исмаилович ИНН: 200103849698 ОГРНИП: 325200000002888</p>
+                   <p class="infoLine"></p>
                 </div>`;
             
             const footer = document.querySelector("footer") || document.querySelector(".ShopFooter-module__links").parentNode;
@@ -166,12 +165,12 @@ var currentUrl = window.location.href;
                                       <div class="News-module__container news__promo">
                                           <p class="title"><span>ПРОМОКОД КАЖДЫЙ ВАЙП</p>
                                           <p class="description">Вайпы происходят каждую пятницу 16:00 по мск</p>
-                                          <a target="_blank" href="https://t.me/bummerrust" class="custom__btn">Узнать промокод</a>
+                                          <a target="_blank" href="https://t.me/REDRUSTic" class="custom__btn">Узнать промокод</a>
                                       </div>
                                       <div class="News-module__container news__24h">
                                           <p class="title"><span>АКТУАЛЬНЫЕ НОВОСТИ ПРОЕКТА</p>
                                           <p class="description">На нашем оффициальном Discord канале</p>
-                                          <a target="_blank" href="https://discord.gg/bummerrust" class="custom__btn">Узнать новости</a>
+                                          <a target="_blank" href="https://discord.gg/mCQDXupkE9" class="custom__btn">Узнать новости</a>
                                       </div>`;
               
                 const mainElement = document.querySelector("main");
@@ -241,7 +240,7 @@ var currentUrl = window.location.href;
                                                   <br>
                                                   <span>На скидку</span> - это промокоды, после введения которых у вас появляется персональная скидка на все товары.<br>
                                                   <br>
-                                                  Промокоды можно найти в группе <span><a href="https://vk.com/bummerrust" target="_blank">ВКонтакте</a></span>.</p>
+                                                  Промокоды можно найти в группе <span><a href="https://discord.gg/t9nTJ6Ve" target="_blank">Discord</a></span>.</p>
                                               </div>
                                            </div>
                                         </div>
@@ -473,7 +472,7 @@ var currentUrl = window.location.href;
                                                   <br>
                                                   <span>На скидку</span> - это промокоды, после введения которых у вас появляется персональная скидка на все товары.<br>
                                                   <br>
-                                                  Промокоды можно найти в группе <span><a href="https://vk.com/yrsrust" target="_blank">ВКонтакте</a></span>.</p>
+                                                  Промокоды можно найти в группе <span><a href="https://discord.gg/t9nTJ6Ve" target="_blank">Discord</a></span>.</p>
                                               </div>
                                            </div>
                                         </div>
@@ -608,12 +607,12 @@ const updateFooter = () => {
         const emailLink = document.querySelector('a[href="mailto:help@gamestores.ru"]')
         if(!emailLink || !boxFooter || footerOriginText) return false
 
-        emailLink.textContent = 'help@rustyborsh.ru'
+        emailLink.textContent = ''
         footerOriginText.innerHTML = `
-            <span class="contact">ФИО: Исаев Магомед-Салах Исмаилович</span>
-            <span class="contact">Инн: 200103849698</span>
-            <span class="contact">Огрнип: 325200000002888</span>
-            <span class="contact">Адрес: Ставропольский край, г. Пятигорск, ул. Парковая, д. 29 357500</span>
+            <span class="contact">ФИО: </span>
+            <span class="contact">Инн: </span>
+            <span class="contact">Огрнип: </span>
+            <span class="contact">Адрес: </span>
         `
     }, 0)
 }
